@@ -1,4 +1,4 @@
-algoritmo "timeatividade"
+algoritmo "Atividade2Time"
 var
    time1, time2 : caractere
    goltime1, goltime2 : inteiro
@@ -21,6 +21,4 @@ inicio
       escreval("Empate!! Placar: ", time1, " ", goltime1, " x ", goltime2, " ", time2)
         fimSe
       fimSe
-
-
 fimalgoritmo
