@@ -13,16 +13,14 @@ inicio
       escreval("Quantos gols o ", time2, " marcou?")
       leia(goltime2)
       se (goltime1 > goltime2) então
-      escreval(time1, "Ganhou com o placar de ", goltime1, " a ", goltime2)
-
-      
-      
-      
-      
-      
-      fimse
-
-      
+      escreval(time1, " ganhou com o placar de ", goltime1, " a ", goltime2)
+      senao
+      se (goltime2 > goltime1) entao
+      escreval(time2, " ganhou com o placar de ", goltime2, " a ", goltime1)
+      senao
+      escreval("Empate! Placar: ", time1, " ", goltime1, " x ", goltime2, " ", time2)
+        fimSe
+      fimSe
 
 
 fimalgoritmo
