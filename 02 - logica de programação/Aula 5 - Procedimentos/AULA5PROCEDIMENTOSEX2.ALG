@@ -13,4 +13,5 @@ inicio
    fimenquanto
 
    escreval("Soma total é: ", soma)
+
 fimalgoritmo

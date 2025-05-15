@@ -20,4 +20,5 @@ inicio
    escreval("Peso total: ", P:0:2, " kg")
    escreval("Excesso: ", Ex:0:2, " kg")
    escreval("Multa a pagar: R$ ", M:0:2)
+
 fimalgoritmo
