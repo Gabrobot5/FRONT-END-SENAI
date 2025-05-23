@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula css</title>
+    <style>
+        /* SELETOR VIA ALL(*) (SELECIONA TUDO) */
+        *{
+           font-family: Verdana, Geneva, Tahoma, sans-serif; 
+        }
+        /* SELETOR VIA TAG */
+        h1{
+            /* font-size - tamanho da fonte */
+            font-size: 23pt;
+        }
+        body{
+            /* background-color - cor de fundo */
+            background-color: rgb(0, 31, 43);
+            /* text-align - alinhamento de texto */
+            text-align: center;
+        }
+        /* SELETOR VIA CLASS (PODEM VARIOS ELEMENTOS) */
+        .paragrafo{
+            /* color - cor de texto */
+            color: rgb(170, 132, 101);
+        }
+        /* SELETOR VIA ID (PODEM SOMENTE 1) */
+        #palavra1{
+            font-style: italic;
+        }
+        #caixa{
+            /*  width - largura */
+            width: 166px;
+            /* height - altura */
+            height: 100px;
+            /* border-radius - arredondar */
+            border-radius: 23px;
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<!-- autoidentação - alt + shift + f -->
+<!-- quebra de linha (apenas visual) - alt + z -->
+<body>
+    <div id="caixa">
+    <h1>TITULO 2</h1>
+    </div>
+    <h1 style="color: rgb(250, 240, 149);">TITULO INTERESSANTE</h1>
+    <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio, consequuntur est eius, ratione
+        <span id="palavra1">veritatis</span> deserunt error quasi aperiam voluptatibus cum eos saepe sunt eveniet dolorem accusamus optio, quae
+        ipsam?</p>
+    <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium maiores mollitia facere beatae amet, quo
+        quasi nisi. Ipsum, a eos. Iure temporibus perspiciatis vero error aspernatur officia? In, voluptatum dicta.</p>
+    <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eligendi voluptas nobis ut laboriosam delectus
+        eius rem nihil adipisci. Ad atque repudiandae quas possimus accusamus molestias aspernatur sint neque rerum?</p>
+
+
+
+</body>
+
+</html>
