@@ -1,0 +1,51 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+/* procedimento iden {} */
+@keyframes mudaCor {
+    0%{
+        background-color: aquamarine;
+    }
+    20%{
+        background-color: aqua;
+        border-radius: 100%;
+    }
+    40%{
+        background-color: antiquewhite;
+        margin-left: 10px;
+    }
+    60%{
+        background-color: cornflowerblue;
+    }
+    80%{
+        background-color: blue;
+        margin-left: 0px;
+        border-radius: 0%;
+    }
+    100%{
+        background-color: darkblue;
+    }
+}
+/* keyframe - configura animação por % (cada etapa) */
+/* animation-name: chama a animação */
+/* animation-duration: duração da animação*/
+/* animation-iteration-count: quanta vezes a animação vai rodar*/
+/* animation-delay: tempo antes da animação rodar*/
+#c1{
+    animation-name: mudaCor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+.caixa{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: darkcyan;
+}
