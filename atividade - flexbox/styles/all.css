@@ -1,7 +1,7 @@
 .header1{
     width: 600px;
     height: 20px;
-    padding: 20px;
+    padding: 3px;
     display: flex;
     background-color: rgb(204, 203, 203);
     flex-direction: row;
@@ -11,6 +11,47 @@
   
 }
 .img{
+    display: flex;
     justify-content: center;
 
+}
+.mid{
+    width: 600px;
+    height: 20px;
+    padding: 1px;
+    display: flex;
+    background-color: rgb(207, 207, 207);
+    flex-direction: row;
+
+}
+.subt{
+    width: 600px;
+    height: 20px;
+    padding: 1px;
+    display: flex;
+    background-color: rgb(27, 27, 27);
+    flex-direction: row;
+    justify-content: end;
+    
+    
+}
+#sub{
+    color: white;
+}
+#sub1{
+    color: white;
+    
+    justify-content: flex-end;
+
+}
+.main{
+    width: 600px;
+    height: 500px;
+    padding: 10px;
+    display: flex;
+    background-color: rgb(204, 203, 203);
+    flex-direction: row;
+}
+#t1{
+   font-size: large;
 }
