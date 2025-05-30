@@ -1,0 +1,40 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(64, 39, 110);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 60%;
+    padding: 20px;
+    background-color: rgb(237, 238, 238);
+    border-radius: 10px;
+    box-shadow: black 10px 10px;
+    overflow: scroll;
+}
+input,textarea{
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid darkblue;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+button{
+    width: 200px;
+    padding: 10px;
+    background-color: darkslategray;
+    color:azure
+}
