@@ -1,0 +1,44 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+/* https://icons.getbootstrap.com/ */
+
+.assunto{
+    width: 80%;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: rgb(184, 184, 184);
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(48, 26, 0);
+    padding: 10px 0px;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: gold;
+}
+
+#linkContato:hover{
+    color: blue;
+}
+#logo img{
+    width: 26px;
+}
