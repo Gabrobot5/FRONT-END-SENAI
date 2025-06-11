@@ -1,0 +1,11 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    --corPrimaria : rgb(89, 89, 145) ;
+    --fontePrincipal : 'verdana' ;
+    --tamanhoFonte : 14pt;
+    --postTamanho : 300px;
+}
