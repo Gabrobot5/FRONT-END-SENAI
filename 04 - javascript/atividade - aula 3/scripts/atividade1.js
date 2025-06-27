@@ -1,4 +1,3 @@
-
 const numero = parseInt(prompt("Digite o número para a tabuada:"));
 const limite = parseInt(prompt("Até qual número deseja multiplicar?"));
 
