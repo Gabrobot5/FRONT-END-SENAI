@@ -1,25 +1,33 @@
-//document.getElementById("nome")
-//document.getElementsByClassName("caixa")
-//document.querySelector(".caixa");
-//document.getElementsByTagName()
-document.querySelector("#nome").value = "Gab";
+// document.getElementById("#nome");
+// document.getElementsByClassName("caixa");
+// document.querySelector(".caixa");
+// document.getElementsByTagName();
+document.querySelector("#nome").value = "Victor";
 
 function pegaNome(){
-nome = document.querySelector("#nome").value;
-alert(`Seja bem vindo : ${nome}`);
+    nome = document.querySelector("#nome").value;
+    alert(`Seja bem vindo :  ${nome}`);
 }
 
-// addEventListener - acompanha os eventos (qual e o que vou fazer)
-// funtion anonima - é uma funão sem nome, geralmente utilizada
-//quando é necessário apenas um comando simples ou a função não será
-//utilizada novamente / arrow function
-divSaiu = document.querySelector("#saiu")
+// ADDEVENTLISTENER - ACOMPANHA OS EVENTOS (QUAL E O QUE VOU FAZER)
+// FUNCTION ANONIMA - É UMA FUNÇÃO SEM NOME, GERALMENTE UTILIZADA 
+// QUANDO É NECESSÁRIO APENAS UM COMANDO SIMPLES OU A FUNÇÃO NÃO SERÁ 
+// UTILIZADA NOVAMENTE / ARROW FUNCTION
+divSaiu = document.querySelector("#saiu");
+
 divSaiu.addEventListener('mouseout',() => {
-    divSaiu.innerHTML = `Voce saiu do quadrado`
+    divSaiu.innerHTML = `voce saiu do quadrado!`;
 })
 
-divSaiu.addEventListener('mouseenter',() => {
-    divSaiu.innerHTML = `Voce entrou do quadrado`
-})
+function entrouQuadrado(){
+    divSaiu.innerHTML = `
+        <p>voce entrou no quadrado!</p>
+        <button>SEXTOU :)</button>
+        `;
+}
+divSaiu.addEventListener('mouseenter', entrouQuadrado);
 
 
+document.querySelector("#propaganda").addEventListener('click', () => {
+    document.querySelector("#propaganda").style.display = "none";
+});

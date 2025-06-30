@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão</title>
+    <link rel="stylesheet" href="styles/all.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Acessar Site</h1>
+        <p>Digite um endereço da internet para abrir em uma nova janela:</p>
+        <div class="form-group">
+            <input type="text" id="urlInput" placeholder="https://www.google.com">
+            <button onclick="abrirUrl()">Ir</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Seletor de Sites</h1>
+        <p>Escolha um site na lista para acessar:</p>
+        <div class="form-group">
+            <select id="siteSelector">
+                <option value="">-- Selecione um site --</option>
+                <option value="https://www.globo.com">Globo</option>
+                <option value="https://www.terra.com.br">Terra</option>
+                <option value="https://www.uol.com.br">UOL</option>
+            </select>
+            <button onclick="acessarSite()">Acessar Site</button>
+        </div>
+    </div>
+
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" placeholder="Digite seu usuário" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" placeholder="Digite sua senha" required>
+            </div>
+            <button type="button" onclick="validarLogin()">Entrar</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h1>Cálculo de Percentual</h1>
+        <div class="form-group">
+            <label for="valor">Valor:</label>
+            <input type="number" id="valor" placeholder="Digite o valor">
+        </div>
+        <div class="form-group">
+            <label for="percentual">Percentual (%):</label>
+            <input type="number" id="percentual" placeholder="Digite o percentual">
+        </div>
+        <button onclick="calcularPercentual()">Calcular Percentual</button>
+    </div>
+
+    <div class="container">
+        <h1>Forma de Pagamento</h1>
+        <div class="form-group">
+            <label for="valorProduto">Valor do Produto:</label>
+            <input type="number" id="valorProduto" placeholder="Digite o valor" step="0.01" min="0">
+        </div>
+        <div class="radio-group">
+            <div class="radio-option">
+                <input type="radio" id="avista" name="pagamento" value="avista" checked>
+                <label for="avista">À Vista</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" id="aprazo" name="pagamento" value="aprazo">
+                <label for="aprazo">À Prazo</label>
+            </div>
+        </div>
+        <button onclick="calcularPagamento()">Calcular Pagamento</button>
+    </div>
+
+    <div class="container">
+        <h1>Cálculo de Hospedagem</h1>
+        
+        <div class="form-group">
+            <label for="diaria">Valor da Diária (R$):</label>
+            <input type="number" id="diaria" placeholder="Digite o valor da diária" step="0.01" min="0">
+        </div>
+        
+        <div class="form-group">
+            <label for="dias">Quantidade de Dias:</label>
+            <input type="number" id="dias" placeholder="Digite a quantidade de dias" min="1">
+        </div>
+        
+        <div class="checkbox-group">
+            <h3>Serviços Adicionais:</h3>
+            <div class="checkbox-option">
+                <input type="checkbox" id="banheiro" name="servicos" value="30">
+                <label for="banheiro">Banheiro (R$ 30,00 por dia)</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" id="banheira" name="servicos" value="100">
+                <label for="banheira">Banheira (R$ 100,00 por dia)</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" id="tv" name="servicos" value="40">
+                <label for="tv">TV (R$ 40,00 por dia)</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" id="internet" name="servicos" value="80">
+                <label for="internet">Internet (R$ 80,00 por dia)</label>
+            </div>
+        </div>
+        
+        <button onclick="calcularHospedagem()">Calcular Total</button>
+        
+        <div id="resultado" class="result"></div>
+    </div>
+
+    <div class="container">
+        <h1>Comentário sobre Corrupção no Brasil</h1>
+        
+        <div class="form-group">
+            <label for="comentario">Deixe seu comentário:</label>
+            <textarea id="comentario" placeholder="Escreva aqui sua opinião sobre a corrupção no Brasil..."></textarea>
+        </div>
+        
+        <button onclick="enviarComentario()">Enviar Comentário</button>
+    </div>
+        
+    <script src="scripts/atividade.js"></script>
+</body>
+</html>
